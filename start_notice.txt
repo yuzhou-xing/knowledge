@@ -10,9 +10,12 @@ github打不开:（解决方式缺点，ip变了就得重新来一回）
  ping github.com，获得ip
 打开"C:\Windows\System32\drivers\etc\hosts"，管理员权限到最后粘上
 20.205.243.166 github.com
-140.82.114.4 github.com
-199.232.69.194 github.global.ssl.fastly.net
+未成功--140.82.114.4 github.com
+未成功--199.232.69.194 github.global.ssl.fastly.net
 刷新DNS缓存：ipconfig/flushdns
+-----------------------------------------------
+change way: down Watt Toolkit, 开启网络加速
+
 
 conda:
 创建名为pytorch虚拟环境：conda create -n pytorch python=3.6
