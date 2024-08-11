@@ -1,0 +1,52 @@
+mysql:
+
+开启服务：net start mysql80
+关闭服务：net stop mysql80
+windowsCMD连接mysql: mysql -u root -p
+
+
+github打不开:（解决方式缺点，ip变了就得重新来一回）
+
+ ping github.com，获得ip
+打开"C:\Windows\System32\drivers\etc\hosts"，管理员权限到最后粘上
+20.205.243.166 github.com
+140.82.114.4 github.com
+199.232.69.194 github.global.ssl.fastly.net
+刷新DNS缓存：ipconfig/flushdns
+
+conda:
+创建名为pytorch虚拟环境：conda create -n pytorch python=3.6
+conda环境激活：conda activate pytorch
+conda 环境关闭：conda deactivate
+列出环境中的包：pip list
+
+安装pytorch:
+conda activate 到目标环境
+conda install pytorch torchvision cudatoolkit=10.2 -c pytorch -c defaults -c numba/label/dev
+（上边的10.2是电脑CUDA版本）
+
+
+
+git key保存：
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+Created directory '/c/Users/Administrator/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa
+Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:ldXt0u91WuRjM/4SThkvFYAfQeaxH3trXevb/5uIvJ8 2871411905@qq.com
+The key's randomart image is:
++---[RSA 3072]----+
+|            +Bo. |
+|           +o.+..|
+|          o .o.+.|
+|         .   .+ B|
+|        S      @+|
+|              ==&|
+|             ooXB|
+|          . . O.+|
+|           +oE *@|
++----[SHA256]-----+
+
